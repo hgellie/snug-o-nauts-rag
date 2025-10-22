@@ -1,0 +1,10 @@
+# Environment files
+.venv/
+__pycache__/
+
+# Python specific
+*.pyc
+.ipynb_checkpoints
+
+# Environment Variables file
+.env
