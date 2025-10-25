@@ -15,11 +15,34 @@ def load_raw_results(path: str) -> List[dict]:
         return json.load(f)
 
 
+def normalize_source(source: str) -> str:
+    """Convert a source filename to its human-readable policy document title."""
+    # Handle common filename patterns like 'policies/Policy Document X.pdf'
+    if source.startswith('policies/Policy Document '):
+        # Extract the number and strip .pdf
+        num = source.split('Document ')[-1].replace('.pdf', '')
+        titles = {
+            '1': 'Policy Document 1: The Snug-O-Nauts Celestial Comfort & Plush Integrity Act of 2025',
+            '2': 'Policy Document 2: The Snug-O-Nauts Orbital De-Stressing & Re-Entry Protocol',
+            '3': 'Policy Document 3: The Snug-O-Nauts Inter-Species & Interspecies Communication Guidelines',
+            '4': 'Policy Document 4: The Great Cosmic Cuddler\'s Code of Conduct',
+            '5': 'Policy Document 5: The Snug-O-Nauts Space Junk & Plush Debris Containment Protocol',
+            '6': 'Policy Document 6: The Snug-O-Nauts Fiscal & Ethical Responsibility Act',
+            '7': 'Policy Document 7: The Snug-O-Nauts Material & Safety Protocols Act',
+            '8': 'Policy Document 8: The Snug-O-Nauts Employee Wellness & Sentient Support Protocol',
+            '9': 'Policy Document 9: The Snug-O-Nauts Foundational Principles & Charter',
+        }
+        return titles.get(num, source)
+    return source
+
+
 def parse_answer_and_sources(rag_answer: str):
     # If the answer contains the marker we used earlier, split it out
     if "**Sources:**" in rag_answer:
         answer_part, sources_part = rag_answer.split("**Sources:**", 1)
         sources = [s.strip() for s in sources_part.split(";") if s.strip()]
+        # Map filenames to human-readable titles
+        sources = [normalize_source(s) for s in sources]
     else:
         answer_part = rag_answer
         sources = []

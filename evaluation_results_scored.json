@@ -11,15 +11,15 @@
     "manual_score_citation_accuracy": null,
     "manual_score_exact_match": null,
     "auto_score_groundedness": 1,
-    "auto_score_citation_accuracy": 0,
+    "auto_score_citation_accuracy": 1,
     "auto_score_exact_match": 0,
     "groundedness_similarity": 0.7752,
     "parsed_answer": "The strictly forbidden term in all Snug-O-Naut communications is \"void,\" with the approved replacement being \"the vast, dark, huggable expanse.\"",
     "parsed_sources": [
-      "policies/Policy Document 1.pdf",
-      "policies/Policy Document 3.pdf",
-      "policies/Policy Document 7.pdf",
-      "policies/Policy Document 9.pdf"
+      "Policy Document 1: The Snug-O-Nauts Celestial Comfort & Plush Integrity Act of 2025",
+      "Policy Document 3: The Snug-O-Nauts Inter-Species & Interspecies Communication Guidelines",
+      "Policy Document 7: The Snug-O-Nauts Material & Safety Protocols Act",
+      "Policy Document 9: The Snug-O-Nauts Foundational Principles & Charter"
     ]
   },
   {
@@ -34,13 +34,13 @@
     "manual_score_citation_accuracy": null,
     "manual_score_exact_match": null,
     "auto_score_groundedness": 1,
-    "auto_score_citation_accuracy": 0,
+    "auto_score_citation_accuracy": 1,
     "auto_score_exact_match": 0,
     "groundedness_similarity": 0.4011,
     "parsed_answer": "- Minimum 12 years in highly sensitive recovery or reconnaissance roles.\n- Must be certified in Deep Space Ethics and show a track record of handling emotional crisis with exceptional stoicism and respect.",
     "parsed_sources": [
-      "policies/Policy Document 4.pdf",
-      "policies/Policy Document 9.pdf"
+      "Policy Document 4: The Great Cosmic Cuddler's Code of Conduct",
+      "Policy Document 9: The Snug-O-Nauts Foundational Principles & Charter"
     ]
   },
   {
@@ -55,14 +55,14 @@
     "manual_score_citation_accuracy": null,
     "manual_score_exact_match": null,
     "auto_score_groundedness": 0,
-    "auto_score_citation_accuracy": 0,
+    "auto_score_citation_accuracy": 1,
     "auto_score_exact_match": 0,
     "groundedness_similarity": 0.0545,
     "parsed_answer": "The purpose of the mandatory daily company-wide session held from 2:00 PM to 2:20 PM is to provide a Nap & Story Time for employees. The procedure involves dimming all lights in the facility and playing a soothing lullaby over the intercom while a certified Cuddle Technician reads a story.",
     "parsed_sources": [
-      "policies/Policy Document 4.pdf",
-      "policies/Policy Document 5.pdf",
-      "policies/Policy Document 8.pdf",
+      "Policy Document 4: The Great Cosmic Cuddler's Code of Conduct",
+      "Policy Document 5: The Snug-O-Nauts Space Junk & Plush Debris Containment Protocol",
+      "Policy Document 8: The Snug-O-Nauts Employee Wellness & Sentient Support Protocol",
       "policies/remote_work_policy.md"
     ]
   },
@@ -78,17 +78,17 @@
     "manual_score_citation_accuracy": null,
     "manual_score_exact_match": null,
     "auto_score_groundedness": 1,
-    "auto_score_citation_accuracy": 0,
+    "auto_score_citation_accuracy": 1,
     "auto_score_exact_match": 0,
     "groundedness_similarity": 0.4198,
     "parsed_answer": "The Pillow Density Meter (PDM) must ensure a 1:1 \"cushion-to-plush\" ratio for the Soft Landing Zone. \n\n--- CITATION ---\n- Section II: The Post-Mission De-Stress & Landing Protocol",
     "parsed_sources": [
-      "policies/Policy Document 1.pdf",
-      "policies/Policy Document 2.pdf",
-      "policies/Policy Document 4.pdf",
-      "policies/Policy Document 5.pdf",
-      "policies/Policy Document 6.pdf",
-      "policies/Policy Document 9.pdf"
+      "Policy Document 1: The Snug-O-Nauts Celestial Comfort & Plush Integrity Act of 2025",
+      "Policy Document 2: The Snug-O-Nauts Orbital De-Stressing & Re-Entry Protocol",
+      "Policy Document 4: The Great Cosmic Cuddler's Code of Conduct",
+      "Policy Document 5: The Snug-O-Nauts Space Junk & Plush Debris Containment Protocol",
+      "Policy Document 6: The Snug-O-Nauts Fiscal & Ethical Responsibility Act",
+      "Policy Document 9: The Snug-O-Nauts Foundational Principles & Charter"
     ]
   },
   {
@@ -103,14 +103,14 @@
     "manual_score_citation_accuracy": null,
     "manual_score_exact_match": null,
     "auto_score_groundedness": 0,
-    "auto_score_citation_accuracy": 0,
+    "auto_score_citation_accuracy": 1,
     "auto_score_exact_match": 0,
     "groundedness_similarity": 0.2887,
     "parsed_answer": "The specific phrase used to activate the Plush-Safe Fire Suppression System is \"Plush Protection Protocol.\" \n\n--- CITATION ---\nSection I: The Fluff Fire, Section III: The Plush Emergency Preparedness & Response Plan",
     "parsed_sources": [
-      "policies/Policy Document 5.pdf",
-      "policies/Policy Document 7.pdf",
-      "policies/Policy Document 9.pdf"
+      "Policy Document 5: The Snug-O-Nauts Space Junk & Plush Debris Containment Protocol",
+      "Policy Document 7: The Snug-O-Nauts Material & Safety Protocols Act",
+      "Policy Document 9: The Snug-O-Nauts Foundational Principles & Charter"
     ]
   },
   {
@@ -125,16 +125,16 @@
     "manual_score_citation_accuracy": null,
     "manual_score_exact_match": null,
     "auto_score_groundedness": 1,
-    "auto_score_citation_accuracy": 0,
+    "auto_score_citation_accuracy": 1,
     "auto_score_exact_match": 0,
     "groundedness_similarity": 0.8809,
     "parsed_answer": "The founder of Snug-O-Nauts, Inc. is Dr. Bartholomew \"Bart\" Fluffington, who was a disgraced astrophysicist and former children's television host.",
     "parsed_sources": [
-      "policies/Policy Document 1.pdf",
-      "policies/Policy Document 3.pdf",
-      "policies/Policy Document 4.pdf",
-      "policies/Policy Document 6.pdf",
-      "policies/Policy Document 9.pdf"
+      "Policy Document 1: The Snug-O-Nauts Celestial Comfort & Plush Integrity Act of 2025",
+      "Policy Document 3: The Snug-O-Nauts Inter-Species & Interspecies Communication Guidelines",
+      "Policy Document 4: The Great Cosmic Cuddler's Code of Conduct",
+      "Policy Document 6: The Snug-O-Nauts Fiscal & Ethical Responsibility Act",
+      "Policy Document 9: The Snug-O-Nauts Foundational Principles & Charter"
     ]
   },
   {
@@ -149,16 +149,16 @@
     "manual_score_citation_accuracy": null,
     "manual_score_exact_match": null,
     "auto_score_groundedness": 0,
-    "auto_score_citation_accuracy": 0,
+    "auto_score_citation_accuracy": 1,
     "auto_score_exact_match": 0,
     "groundedness_similarity": 0.3206,
     "parsed_answer": "Policy Document 7: The Snug-O-Nauts Material & Safety Protocols Act, Section II: Customer Qualifications & Vetting.",
     "parsed_sources": [
-      "policies/Policy Document 1.pdf",
-      "policies/Policy Document 3.pdf",
-      "policies/Policy Document 4.pdf",
-      "policies/Policy Document 7.pdf",
-      "policies/Policy Document 9.pdf"
+      "Policy Document 1: The Snug-O-Nauts Celestial Comfort & Plush Integrity Act of 2025",
+      "Policy Document 3: The Snug-O-Nauts Inter-Species & Interspecies Communication Guidelines",
+      "Policy Document 4: The Great Cosmic Cuddler's Code of Conduct",
+      "Policy Document 7: The Snug-O-Nauts Material & Safety Protocols Act",
+      "Policy Document 9: The Snug-O-Nauts Foundational Principles & Charter"
     ]
   },
   {
@@ -173,14 +173,14 @@
     "manual_score_citation_accuracy": null,
     "manual_score_exact_match": null,
     "auto_score_groundedness": 0,
-    "auto_score_citation_accuracy": 0,
+    "auto_score_citation_accuracy": 1,
     "auto_score_exact_match": 0,
     "groundedness_similarity": 0.2265,
     "parsed_answer": "1. 50% of revenue is allocated to Plush Wellness for plush care and maintenance, while 25% is allocated to Employee Emotional Sustenance for employee salaries and emotional support. \n\n2. Plush Wellness receives a higher percentage of revenue allocation compared to Employee Emotional Sustenance in the Mission Revenue Allocation guidelines.",
     "parsed_sources": [
-      "policies/Policy Document 6.pdf",
-      "policies/Policy Document 8.pdf",
-      "policies/Policy Document 9.pdf"
+      "Policy Document 6: The Snug-O-Nauts Fiscal & Ethical Responsibility Act",
+      "Policy Document 8: The Snug-O-Nauts Employee Wellness & Sentient Support Protocol",
+      "Policy Document 9: The Snug-O-Nauts Foundational Principles & Charter"
     ]
   },
   {
@@ -195,15 +195,15 @@
     "manual_score_citation_accuracy": null,
     "manual_score_exact_match": null,
     "auto_score_groundedness": 0,
-    "auto_score_citation_accuracy": 0,
+    "auto_score_citation_accuracy": 1,
     "auto_score_exact_match": 0,
     "groundedness_similarity": 0.2824,
     "parsed_answer": "The technician must ask the following three non-threatening questions during the Decompression Debriefing for a returning Snug-O-Naut:\n\n1. \"Welcome back, noble space friend. We're so glad you're here. How are you feeling today?\"\n2. \"Did you have any interesting experiences during your mission?\"\n3. \"Is there anything you'd like to share or discuss about your time in space?\"",
     "parsed_sources": [
-      "policies/Policy Document 1.pdf",
-      "policies/Policy Document 2.pdf",
-      "policies/Policy Document 4.pdf",
-      "policies/Policy Document 5.pdf"
+      "Policy Document 1: The Snug-O-Nauts Celestial Comfort & Plush Integrity Act of 2025",
+      "Policy Document 2: The Snug-O-Nauts Orbital De-Stressing & Re-Entry Protocol",
+      "Policy Document 4: The Great Cosmic Cuddler's Code of Conduct",
+      "Policy Document 5: The Snug-O-Nauts Space Junk & Plush Debris Containment Protocol"
     ]
   },
   {
@@ -218,15 +218,15 @@
     "manual_score_citation_accuracy": null,
     "manual_score_exact_match": null,
     "auto_score_groundedness": 1,
-    "auto_score_citation_accuracy": 0,
+    "auto_score_citation_accuracy": 1,
     "auto_score_exact_match": 0,
     "groundedness_similarity": 0.7648,
     "parsed_answer": "Symptoms: Low, continuous hum originating from the plushie's core.\nRemediation Protocol: Minimum of 48 hours of quiet reflection in a soundproofed, dark room, followed by a re-run of favorite childhood cartoons.",
     "parsed_sources": [
-      "policies/Policy Document 1.pdf",
-      "policies/Policy Document 2.pdf",
-      "policies/Policy Document 3.pdf",
-      "policies/Policy Document 8.pdf"
+      "Policy Document 1: The Snug-O-Nauts Celestial Comfort & Plush Integrity Act of 2025",
+      "Policy Document 2: The Snug-O-Nauts Orbital De-Stressing & Re-Entry Protocol",
+      "Policy Document 3: The Snug-O-Nauts Inter-Species & Interspecies Communication Guidelines",
+      "Policy Document 8: The Snug-O-Nauts Employee Wellness & Sentient Support Protocol"
     ]
   },
   {
@@ -241,16 +241,16 @@
     "manual_score_citation_accuracy": null,
     "manual_score_exact_match": null,
     "auto_score_groundedness": 0,
-    "auto_score_citation_accuracy": 0,
+    "auto_score_citation_accuracy": 1,
     "auto_score_exact_match": 0,
     "groundedness_similarity": 0.3191,
     "parsed_answer": "The Snug-O-Naut's status is \"Over-stuffed\" and the required procedure is \"Pass - Marginal.\"",
     "parsed_sources": [
-      "policies/Policy Document 1.pdf",
-      "policies/Policy Document 2.pdf",
-      "policies/Policy Document 3.pdf",
-      "policies/Policy Document 7.pdf",
-      "policies/Policy Document 9.pdf"
+      "Policy Document 1: The Snug-O-Nauts Celestial Comfort & Plush Integrity Act of 2025",
+      "Policy Document 2: The Snug-O-Nauts Orbital De-Stressing & Re-Entry Protocol",
+      "Policy Document 3: The Snug-O-Nauts Inter-Species & Interspecies Communication Guidelines",
+      "Policy Document 7: The Snug-O-Nauts Material & Safety Protocols Act",
+      "Policy Document 9: The Snug-O-Nauts Foundational Principles & Charter"
     ]
   },
   {
@@ -265,18 +265,18 @@
     "manual_score_citation_accuracy": null,
     "manual_score_exact_match": null,
     "auto_score_groundedness": 1,
-    "auto_score_citation_accuracy": 0,
+    "auto_score_citation_accuracy": 1,
     "auto_score_exact_match": 0,
     "groundedness_similarity": 0.4718,
     "parsed_answer": "The \"Hug-to-Handshake\" Rule states that in all interactions with a Snug-O-Naut, a hug must be offered before a handshake if a handshake is required, establishing trust and affection as a core principle of the corporate culture.",
     "parsed_sources": [
-      "policies/Policy Document 1.pdf",
-      "policies/Policy Document 2.pdf",
-      "policies/Policy Document 4.pdf",
-      "policies/Policy Document 6.pdf",
-      "policies/Policy Document 7.pdf",
-      "policies/Policy Document 8.pdf",
-      "policies/Policy Document 9.pdf"
+      "Policy Document 1: The Snug-O-Nauts Celestial Comfort & Plush Integrity Act of 2025",
+      "Policy Document 2: The Snug-O-Nauts Orbital De-Stressing & Re-Entry Protocol",
+      "Policy Document 4: The Great Cosmic Cuddler's Code of Conduct",
+      "Policy Document 6: The Snug-O-Nauts Fiscal & Ethical Responsibility Act",
+      "Policy Document 7: The Snug-O-Nauts Material & Safety Protocols Act",
+      "Policy Document 8: The Snug-O-Nauts Employee Wellness & Sentient Support Protocol",
+      "Policy Document 9: The Snug-O-Nauts Foundational Principles & Charter"
     ]
   },
   {
@@ -291,15 +291,15 @@
     "manual_score_citation_accuracy": null,
     "manual_score_exact_match": null,
     "auto_score_groundedness": 0,
-    "auto_score_citation_accuracy": 0,
+    "auto_score_citation_accuracy": 1,
     "auto_score_exact_match": 0,
     "groundedness_similarity": 0.0128,
     "parsed_answer": "1. \"Meditative\" Teddy Bear: Ideal for employees who require a grounding presence.\n2. \"Energetic\" Bunny: Ideal for high-stress roles, such as the Orbital Debris Retrieval Specialist.\n3. \"Reflective\" Koala: Ideal for employees in solemn roles, possessing a calm demeanor under pressure and a deep respect for plush companions. \n\n(Source: Snug-O-Nauts Company Policy - Section I: The Therapeutic Plush & Emotional Support System)",
     "parsed_sources": [
-      "policies/Policy Document 4.pdf",
-      "policies/Policy Document 6.pdf",
-      "policies/Policy Document 8.pdf",
-      "policies/Policy Document 9.pdf"
+      "Policy Document 4: The Great Cosmic Cuddler's Code of Conduct",
+      "Policy Document 6: The Snug-O-Nauts Fiscal & Ethical Responsibility Act",
+      "Policy Document 8: The Snug-O-Nauts Employee Wellness & Sentient Support Protocol",
+      "Policy Document 9: The Snug-O-Nauts Foundational Principles & Charter"
     ]
   },
   {
@@ -314,15 +314,15 @@
     "manual_score_citation_accuracy": null,
     "manual_score_exact_match": null,
     "auto_score_groundedness": 1,
-    "auto_score_citation_accuracy": 0,
+    "auto_score_citation_accuracy": 1,
     "auto_score_exact_match": 0,
     "groundedness_similarity": 0.4626,
     "parsed_answer": "The client's \"Memory Box\" must contain the carefully preserved remnants, a single, hand-stitched patch with the Snug-O-Naut's name and mission number, and a written elegy crafted by a certified Emotional Resonance Officer.",
     "parsed_sources": [
-      "policies/Policy Document 2.pdf",
-      "policies/Policy Document 4.pdf",
-      "policies/Policy Document 5.pdf",
-      "policies/Policy Document 6.pdf"
+      "Policy Document 2: The Snug-O-Nauts Orbital De-Stressing & Re-Entry Protocol",
+      "Policy Document 4: The Great Cosmic Cuddler's Code of Conduct",
+      "Policy Document 5: The Snug-O-Nauts Space Junk & Plush Debris Containment Protocol",
+      "Policy Document 6: The Snug-O-Nauts Fiscal & Ethical Responsibility Act"
     ]
   },
   {
@@ -337,14 +337,14 @@
     "manual_score_citation_accuracy": null,
     "manual_score_exact_match": null,
     "auto_score_groundedness": 0,
-    "auto_score_citation_accuracy": 0,
+    "auto_score_citation_accuracy": 1,
     "auto_score_exact_match": 0,
     "groundedness_similarity": 0.2332,
     "parsed_answer": "The three materials strictly forbidden from any area where Snug-O-Nauts are present are not explicitly listed in the provided context.",
     "parsed_sources": [
-      "policies/Policy Document 1.pdf",
-      "policies/Policy Document 3.pdf",
-      "policies/Policy Document 7.pdf"
+      "Policy Document 1: The Snug-O-Nauts Celestial Comfort & Plush Integrity Act of 2025",
+      "Policy Document 3: The Snug-O-Nauts Inter-Species & Interspecies Communication Guidelines",
+      "Policy Document 7: The Snug-O-Nauts Material & Safety Protocols Act"
     ]
   }
 ]
