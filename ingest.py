@@ -1,9 +1,10 @@
 import os
 from dotenv import load_dotenv
-from langchain_community.document_loaders import DirectoryLoader, UnstructuredFileLoader
+from langchain_openai import OpenAIEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.document_loaders import DirectoryLoader, UnstructuredFileLoader
 from langchain_community.vectorstores import Chroma
+
 
 # --- Configuration ---
 
@@ -28,13 +29,15 @@ def load_documents():
     return documents
 
 def split_text(documents):
-    """Split documents into smaller, overlapping chunks."""
-    
-    # Project requirement: "Chunk documents (e.g., by headings or token windows with overlap)."
-    # RecursiveCharacterTextSplitter is a good general-purpose splitter.
+    """Split documents into smaller, more precise, overlapping chunks."""
+
+    # CRITICAL FIX: Smaller chunk size to avoid context contamination
+    # A smaller chunk size forces the retriever to be more precise.
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=500,        # A standard chunk size in tokens/characters
-        chunk_overlap=50,      # A standard overlap for context preservation
+        chunk_size=300,        # NEW: Down from 500
+        chunk_overlap=30,      # NEW: Down from 50
+        # NEW: Specify separators to prioritize splitting at double newlines (paragraphs/sections)
+        separators=["\n\n", "\n", " ", ""],
         length_function=len,
         is_separator_regex=False,
     )
@@ -48,7 +51,8 @@ def create_embeddings(chunks):
     # Project Requirement: "Use free or zero-cost options when possible."
     # HuggingFaceEmbeddings with a local model is a great free-tier option.
     # The 'all-MiniLM-L6-v2' model is fast and highly effective.
-    embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+    # Use OpenAI's text-embedding-3-small model (API-based)
+    embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 
     # Clear out any existing database contents for a clean run
     if os.path.exists(CHROMA_PATH):

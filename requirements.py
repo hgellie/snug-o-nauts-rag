@@ -65,13 +65,13 @@ jsonschema==4.25.1
 jsonschema-specifications==2025.9.1
 kiwisolver==1.4.9
 kubernetes==34.1.0
-langchain==1.0.2
+langchain==0.3.27
 langchain-classic==1.0.0
 langchain-cohere==0.4.6
-langchain-community==0.4
-langchain-core==1.0.1
+langchain-community==0.3.31
+langchain-core==0.3.79
 langchain-openai==0.3.35
-langchain-text-splitters==1.0.0
+langchain-text-splitters==0.3.11
 langdetect==1.0.9
 langgraph==1.0.1
 langgraph-checkpoint==3.0.0

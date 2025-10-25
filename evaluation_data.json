@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "query": "What is the strictly forbidden term in all Snug-O-Naut communications, and what is its approved replacement?",
+    "ground_truth": "The strictly forbidden term is **\"void,\"** and its approved replacement is **\"the vast, dark, huggable expanse.\"**",
+    "source_document": "Policy Document 3: The Snug-O-Nauts Inter-Species & Interspecies Communication Guidelines",
+    "query_type": "Factual Extraction"
+  },
+  {
+    "id": 2,
+    "query": "What are the mandatory credentials or experience for an Orbital Debris Retrieval Specialist (Level 4 Certification)?",
+    "ground_truth": "The required experience is a minimum of **12 years in highly sensitive recovery or reconnaissance roles** and certification in **Deep Space Ethics**.",
+    "source_document": "Policy Document 4: The Great Cosmic Cuddler's Code of Conduct",
+    "query_type": "Factual Extraction"
+  },
+  {
+    "id": 3,
+    "query": "What is the purpose of the mandatory, daily company-wide session held from 2:00 PM to 2:20 PM, and what is the procedure?",
+    "ground_truth": "The purpose is to **combat mid-afternoon fatigue** and **promote calm and camaraderie**. The procedure is to dim all lights, play a soothing lullaby, and have a certified Cuddle Technician read a comforting children's story.",
+    "source_document": "Policy Document 8: The Snug-O-Nauts Employee Wellness & Sentient Support Protocol",
+    "query_type": "Factual Extraction"
+  },
+  {
+    "id": 4,
+    "query": "What must the Pillow Density Meter (PDM) ensure to maintain an optimal cushion-to-plush ratio for the Soft Landing Zone?",
+    "ground_truth": "The PDM must ensure an optimal **1:1 \"cushion-to-plush\" ratio**.",
+    "source_document": "Policy Document 2: The Snug-O-Nauts Orbital De-Stressing & Re-Entry Protocol",
+    "query_type": "Factual Extraction"
+  },
+  {
+    "id": 5,
+    "query": "What specific phrase is used to activate the Plush-Safe Fire Suppression System?",
+    "ground_truth": "The system is voice-activated by the phrase **\"Plush Protection Protocol.\"**",
+    "source_document": "Policy Document 7: The Snug-O-Nauts Material & Safety Protocols Act",
+    "query_type": "Factual Extraction"
+  },
+  {
+    "id": 6,
+    "query": "Who is the founder of Snug-O-Nauts, Inc., and what was his initial profession?",
+    "ground_truth": "The founder is **Dr. Bartholomew \"Bart\" Fluffington**, and he was a disgraced astrophysicist and former children's television host.",
+    "source_document": "Policy Document 9: The Snug-O-Nauts Foundational Principles & Charter",
+    "query_type": "Factual Extraction"
+  },
+  {
+    "id": 7,
+    "query": "An applicant for a Snug-O-Naut is disqualified. Which policy section provides the explicit list of eligibility requirements for customers?",
+    "ground_truth": "**Section II: Customer Qualifications & Vetting** of *The Snug-O-Nauts Celestial Comfort & Plush Integrity Act of 2025* outlines the eligibility requirements for customers.",
+    "source_document": "Policy Document 1: The Snug-O-Nauts Celestial Comfort & Plush Integrity Act of 2025",
+    "query_type": "Comparative/Analytical"
+  },
+  {
+    "id": 8,
+    "query": "Compare the revenue allocation for **Plush Wellness** versus **Employee Emotional Sustenance** from the Mission Revenue Allocation guidelines.",
+    "ground_truth": "**Plush Wellness** receives **50%** of mission revenue, which is double the **25%** allocated to **Employee Emotional Sustenance**. The remaining 25% goes to Research & Development.",
+    "source_document": "Policy Document 6: The Snug-O-Nauts Fiscal & Ethical Responsibility Act",
+    "query_type": "Comparative/Analytical"
+  },
+  {
+    "id": 9,
+    "query": "What are the three non-threatening questions a technician must use during the Decompression Debriefing for a returning Snug-O-Naut?",
+    "ground_truth": "The technician will use approved, non-threatening questions like: **\"Welcome back, noble space friend. We're so glad you're home,\" \"Did you see any fluffy clouds up there?\",** and **\"Was the moon as round as a cookie?\"**",
+    "source_document": "Policy Document 2: The Snug-O-Nauts Orbital De-Stressing & Re-Entry Protocol",
+    "query_type": "Comparative/Analytical"
+  },
+  {
+    "id": 10,
+    "query": "What are the symptoms and remediation protocol for a Snug-O-Naut suffering from **Existential Hum** upon return?",
+    "ground_truth": "The symptom is a **low, continuous hum originating from the plushie's core**. The remediation protocol requires a minimum of **48 hours of quiet reflection** in a soundproofed, dark room, followed by a **re-run of favorite childhood cartoons**.",
+    "source_document": "Policy Document 2: The Snug-O-Nauts Orbital De-Stressing & Re-Entry Protocol",
+    "query_type": "Comparative/Analytical"
+  },
+  {
+    "id": 11,
+    "query": "If a Snug-O-Naut's Hug-to-Fluff Ratio is measured at 1.6, what is its status and what procedure is required?",
+    "ground_truth": "A ratio of 1.6 is categorized as **Over-stuffed** with a **Pass - Marginal** status. **No procedure** is required as it falls within the acceptable range (1.0 - 1.8).",
+    "source_document": "Policy Document 1: The Snug-O-Nauts Celestial Comfort & Plush Integrity Act of 2025",
+    "query_type": "Comparative/Analytical"
+  },
+  {
+    "id": 12,
+    "query": "What is the \"Hug-to-Handshake\" Rule described in the Great Cosmic Cuddler's Code of Conduct?",
+    "ground_truth": "In all interactions with a Snug-O-Naut, a **hug must be offered before a handshake**, if a handshake is required, to establish a foundation of trust and affection.",
+    "source_document": "Policy Document 4: The Great Cosmic Cuddler's Code of Conduct",
+    "query_type": "Procedural/List-Based"
+  },
+  {
+    "id": 13,
+    "query": "List the three types of Therapeutic Plushies and their ideal employee assignments.",
+    "ground_truth": "The three types are: 1. **The \"Meditative\" Teddy Bear** (Ideal for employees who require a grounding presence). 2. **The \"Energetic\" Bunny** (Designed to absorb and redirect anxiety; ideal for high-stress roles, such as the ODRS). 3. **The \"Reflective\" Koala** (Encourages self-reflection and contemplative thought; ideal for Emotional Resonance Officers).",
+    "source_document": "Policy Document 8: The Snug-O-Nauts Employee Wellness & Sentient Support Protocol",
+    "query_type": "Procedural/List-Based"
+  },
+  {
+    "id": 14,
+    "query": "What must a client's \"Memory Box\" contain if their Snug-O-Naut's mission was compromised and Celestial Remnants were recovered?",
+    "ground_truth": "The box must contain: 1. The **carefully preserved Celestial Remnants**. 2. A single, hand-stitched **patch with the Snug-O-Naut's name and mission number**. 3. A **written elegy** crafted by a certified Emotional Resonance Officer.",
+    "source_document": "Policy Document 5: The Snug-O-Nauts Space Junk & Plush Debris Containment Protocol",
+    "query_type": "Procedural/List-Based"
+  },
+  {
+    "id": 15,
+    "query": "What are the three materials strictly forbidden from any area where Snug-O-Nauts are present, as listed in the Material & Safety Protocols Act?",
+    "ground_truth": "The three categories of prohibited materials are: 1. **Abrasive Materials** (e.g., sandpaper). 2. **Puncturing Objects** (e.g., sharp objects). 3. **Static-Generating Materials** (e.g., certain types of wool).",
+    "source_document": "Policy Document 7: The Snug-O-Nauts Material & Safety Protocols Act",
+    "query_type": "Procedural/List-Based"
+  }
+]
