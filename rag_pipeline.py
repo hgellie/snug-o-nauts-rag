@@ -104,11 +104,11 @@ def answer_question(question: str):
 
     # --- Retrieval (Top-k) ---
     # Use the retriever returned by setup_rag_components to fetch relevant docs
-    results = compression_retriever.get_relevant_documents(question)
+    results = compression_retriever.invoke(question)
     
     # 4. Process retrieved documents
     if not results:
-        return "I can only answer questions about our company policies and procedures."
+        return "I couldn't find any relevant information in our policy documents. Could you rephrase your question?"
     
     def get_normalized_tokens(text: str) -> set:
         """Extract normalized tokens from text."""

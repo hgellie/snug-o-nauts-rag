@@ -2,65 +2,160 @@
 
 This project implements a Retrieval-Augmented Generation (RAG) LLM-based application designed to answer user questions exclusively about a corpus of company policies and procedures. It uses a local vector store (ChromaDB) and the OpenAI API for generation.
 
----
+## Features
 
-## Project Status and Architecture
+- 🔍 **Smart Document Retrieval**: Uses semantic search to find relevant policy information
+- 🤖 **AI-Powered Answers**: Leverages OpenAI's GPT models for natural language understanding
+- 📚 **Source Citations**: Every answer includes references to source documents
+- 🛡️ **Built-in Guardrails**: Prevents answers from outside the policy corpus
+- 🌐 **User-Friendly Interface**: Clean web UI for easy interaction
+- 🔗 **API Access**: RESTful endpoints for programmatic access
+
+## Project Architecture
 
 | Component | Status | Details |
 | :--- | :--- | :--- |
-| **Data Corpus** | Complete | 10 policy documents in various formats (PDF, TXT, MD). |
-| **Ingestion** | Complete | Documents parsed, chunked, embedded with `all-MiniLM-L6-v2`, and indexed in ChromaDB. |
-| **RAG Pipeline** | Complete | Implements Top-k retrieval, conditional prompting, source citation, and a guardrail against out-of-corpus questions. |
-| **Web Application** | Complete | Built with Flask, providing a web UI (`/`) and an API endpoint (`/chat`). |
-| **Deployment** | Pending | To be deployed using a free-tier host (e.g., Render/Railway). |
-| **CI/CD** | Pending | To be implemented via GitHub Actions. |
+| **Data Corpus** | ✅ | Policy documents in various formats (PDF, TXT, MD) |
+| **Ingestion** | ✅ | Documents chunked & embedded using `all-MiniLM-L6-v2` |
+| **Vector Store** | ✅ | ChromaDB for efficient similarity search |
+| **RAG Pipeline** | ✅ | Top-k retrieval with source citation |
+| **Web Application** | ✅ | Flask-based UI and API endpoints |
+| **CI/CD** | ✅ | GitHub Actions for automated testing |
 
----
+## Quick Start
 
-## 1. Local Setup and Execution
+### 1. Prerequisites
 
-To run this application locally, follow these steps:
+- Python 3.12+
+- OpenAI API key
+- Git
 
-### A. Environment Setup (First Time Only)
+### 2. Installation
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [YOUR GITHUB REPO URL HERE]
-    cd snug-project
-    ```
-2.  **Create and activate a virtual environment:**
-    ```bash
-    python3 -m venv .venv
-    source .venv/bin/activate  # Mac/Linux
-    # .venv\Scripts\activate   # Windows
-    ```
-3.  **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    # NOTE: If you encounter issues with PDF parsing, run: pip install "unstructured[pdf]"
-    ```
+```bash
+# Clone the repository
+git clone https://github.com/hgellie/snug-o-nauts-rag.git
+cd snug-project
 
-### B. API Key Configuration
+# Create and activate virtual environment
+python3 -m venv .venv
+source .venv/bin/activate  # Mac/Linux
+# .venv\Scripts\activate   # Windows
 
-1.  Create a file named **`.env`** in the root directory.
-2.  Add your OpenAI API key for the LLM connection (GPT-3.5-turbo):
-    ```
-    OPENAI_API_KEY="sk-YOUR_OPENAI_KEY_HERE"
-    ```
+# Install dependencies
+pip install -r requirements.txt
+```
 
-### C. Data Ingestion (Indexing)
+### 3. Configuration
 
-The vector database must be built before the app can run.
+1. Create a `.env` file in the root directory:
+```bash
+OPENAI_API_KEY="your-api-key-here"
+```
 
-1.  Place your policy documents (Policy Document 1-9 and `remote_work_policy.md`) inside the **`policies/`** directory.
-2.  Run the ingestion script. This will create the searchable `chroma_data/` folder.
-    ```bash
-    python ingest.py
-    ```
+2. Place your policy documents in the `policies/` directory
 
-### D. Run the Web Application
+### 4. Data Ingestion
 
-Start the Flask server:
+```bash
+python ingest.py
+```
+
+### 5. Run the Application
 
 ```bash
 python app.py
+```
+
+Visit `http://localhost:5000` in your browser.
+
+## API Endpoints
+
+### Web Interface
+- `GET /` - Web UI for interactive Q&A
+- `GET /health` - Health check endpoint
+
+### API
+- `POST /chat`
+  ```json
+  {
+    "question": "What is the remote work policy?"
+  }
+  ```
+  Returns:
+  ```json
+  {
+    "answer": "...",
+    "citations": ["policy_doc.md"],
+    "question": "What is the remote work policy?"
+  }
+  ```
+
+## CI/CD Pipeline
+
+The project includes automated checks via GitHub Actions:
+
+- ✅ Python syntax validation
+- ✅ Code quality checks (flake8)
+- ✅ Dependency installation verification
+- ✅ File structure validation
+
+The workflow runs on:
+- Push to main branch
+- Pull requests to main branch
+
+## Project Structure
+
+```
+snug-project/
+├── .github/
+│   └── workflows/
+│       └── python-ci.yml    # CI/CD configuration
+├── chroma_data/            # Vector database (generated)
+├── policies/              # Source policy documents
+├── app.py                # Flask web application
+├── evaluate.py           # Evaluation scripts
+├── ingest.py            # Document ingestion
+├── rag_pipeline.py      # Core RAG implementation
+└── requirements.txt     # Python dependencies
+```
+
+## Development
+
+### Adding New Features
+
+1. Create a new branch:
+```bash
+git checkout -b feature/your-feature-name
+```
+
+2. Make your changes and test locally
+
+3. Create a pull request to main
+
+The CI pipeline will automatically run checks on your PR.
+
+### Running Tests Locally
+
+```bash
+# Install test dependencies
+pip install flake8 pytest
+
+# Run linting
+flake8 .
+
+# Validate syntax
+python -m py_compile app.py rag_pipeline.py
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+## License
+
+MIT License - See LICENSE file for details

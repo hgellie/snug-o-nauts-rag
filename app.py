@@ -26,14 +26,19 @@ HTML_TEMPLATE = """
         <input type="submit" value="Ask">
     </form>
 
+    {% if question %}
+        <div style="margin-top: 20px;">
+            <strong>Your question:</strong>
+            <p style="background-color: #f8f9fa; padding: 10px; border-radius: 4px; margin-top: 5px;">{{ question }}</p>
+        </div>
+    {% endif %}
+
     {% if answer %}
         <h2>Answer:</h2>
         <div class="answer-box">
             {{ answer | safe }}
         </div>
     {% endif %}
-
-    <p style="text-align: center; margin-top: 20px;">Use the /chat endpoint for API access, or the /health endpoint for status.</p>
 </div>
 """
 
@@ -41,6 +46,7 @@ HTML_TEMPLATE = """
 def index():
     """Endpoint / - Web chat interface."""
     answer = None
+    question = None
     if request.method == 'POST':
         question = request.form['question']
         raw_answer = answer_question(question)
@@ -48,7 +54,7 @@ def index():
         # Simple formatting for web display
         answer = raw_answer.replace("\n\n**Sources:**", '<div class="sources">Sources:') + '</div>'
         
-    return render_template_string(HTML_TEMPLATE, answer=answer)
+    return render_template_string(HTML_TEMPLATE, answer=answer, question=question)
 
 @app.route('/chat', methods=['POST'])
 def chat_api():
