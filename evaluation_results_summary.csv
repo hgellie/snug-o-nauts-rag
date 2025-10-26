@@ -1,16 +1,16 @@
-id,query,auto_score_groundedness,auto_score_citation_accuracy,auto_score_exact_match,groundedness_similarity,latency_ms
-1,"What is the strictly forbidden term in all Snug-O-Naut communications, and what is its approved replacement?",1,1,0,0.7752,3051.65
-2,What are the mandatory credentials or experience for an Orbital Debris Retrieval Specialist (Level 4 Certification)?,1,1,0,0.4011,1533.01
-3,"What is the purpose of the mandatory, daily company-wide session held from 2:00 PM to 2:20 PM, and what is the procedure?",0,1,0,0.0545,1140.74
-4,What must the Pillow Density Meter (PDM) ensure to maintain an optimal cushion-to-plush ratio for the Soft Landing Zone?,1,1,0,0.4198,1397.73
-5,What specific phrase is used to activate the Plush-Safe Fire Suppression System?,0,1,0,0.2887,1836.33
-6,"Who is the founder of Snug-O-Nauts, Inc., and what was his initial profession?",1,1,0,0.8809,1029.56
-7,An applicant for a Snug-O-Naut is disqualified. Which policy section provides the explicit list of eligibility requirements for customers?,0,1,0,0.3206,1128.19
-8,Compare the revenue allocation for **Plush Wellness** versus **Employee Emotional Sustenance** from the Mission Revenue Allocation guidelines.,0,1,0,0.2265,1938.00
-9,What are the three non-threatening questions a technician must use during the Decompression Debriefing for a returning Snug-O-Naut?,0,1,0,0.2824,1589.27
-10,What are the symptoms and remediation protocol for a Snug-O-Naut suffering from **Existential Hum** upon return?,1,1,0,0.7648,4344.54
-11,"If a Snug-O-Naut's Hug-to-Fluff Ratio is measured at 1.6, what is its status and what procedure is required?",0,1,0,0.3191,1384.72
-12,"What is the ""Hug-to-Handshake"" Rule described in the Great Cosmic Cuddler's Code of Conduct?",1,1,0,0.4718,1114.73
-13,List the three types of Therapeutic Plushies and their ideal employee assignments.,0,1,0,0.0128,1649.06
-14,"What must a client's ""Memory Box"" contain if their Snug-O-Naut's mission was compromised and Celestial Remnants were recovered?",1,1,0,0.4626,1693.61
-15,"What are the three materials strictly forbidden from any area where Snug-O-Nauts are present, as listed in the Material & Safety Protocols Act?",0,1,0,0.2332,1112.09
+id,query,auto_score_groundedness,auto_score_citation_accuracy,auto_score_exact_match,groundedness_similarity,token_overlap_score,latency_ms
+1,"What is the strictly forbidden term in all Snug-O-Naut communications, and what is its approved replacement?",1,1,0,0.7482,0.8667,1402.87
+2,What are the mandatory credentials or experience for an Orbital Debris Retrieval Specialist (Level 4 Certification)?,0,1,0,0.2654,0.2105,1012.86
+3,"What is the purpose of the mandatory, daily company-wide session held from 2:00 PM to 2:20 PM, and what is the procedure?",1,1,0,0.0553,0.5769,1193.79
+4,What must the Pillow Density Meter (PDM) ensure to maintain an optimal cushion-to-plush ratio for the Soft Landing Zone?,1,1,0,0.524,1.0,721.42
+5,What specific phrase is used to activate the Plush-Safe Fire Suppression System?,1,1,0,0.3169,0.4444,819.89
+6,"Who is the founder of Snug-O-Nauts, Inc., and what was his initial profession?",1,1,0,0.8809,0.9375,1019.38
+7,An applicant for a Snug-O-Naut is disqualified. Which policy section provides the explicit list of eligibility requirements for customers?,1,1,0,0.3922,0.35,842.09
+8,Compare the revenue allocation for **Plush Wellness** versus **Employee Emotional Sustenance** from the Mission Revenue Allocation guidelines.,0,1,0,0.1905,0.0476,1003.51
+9,What are the three non-threatening questions a technician must use during the Decompression Debriefing for a returning Snug-O-Naut?,1,1,0,0.3368,0.1562,879.73
+10,What are the symptoms and remediation protocol for a Snug-O-Naut suffering from **Existential Hum** upon return?,0,1,0,0.1701,0.0,653.47
+11,"If a Snug-O-Naut's Hug-to-Fluff Ratio is measured at 1.6, what is its status and what procedure is required?",1,0,0,0.3722,0.2273,875.17
+12,"What is the ""Hug-to-Handshake"" Rule described in the Great Cosmic Cuddler's Code of Conduct?",1,0,0,0.3103,0.0952,925.61
+13,List the three types of Therapeutic Plushies and their ideal employee assignments.,0,0,0,0.0238,0.0833,1168.67
+14,"What must a client's ""Memory Box"" contain if their Snug-O-Naut's mission was compromised and Celestial Remnants were recovered?",1,1,0,0.4626,0.92,1225.45
+15,"What are the three materials strictly forbidden from any area where Snug-O-Nauts are present, as listed in the Material & Safety Protocols Act?",0,1,0,0.0484,0.2353,762.93
