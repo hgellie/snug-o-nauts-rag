@@ -1,0 +1,5 @@
+metric,n,mean_or_median
+groundedness,0,
+citation_accuracy,0,
+exact_match,0,
+median_latency_ms,15,1024.18

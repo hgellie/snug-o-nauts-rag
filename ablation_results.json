@@ -8,9 +8,9 @@
       "rag_answer": "The strictly forbidden term in all Snug-O-Naut communications is \"The Void,\" which is to be replaced by \"the vast, dark, huggable expanse.\"\n\n**Sources:** policies/Policy Document 9.pdf",
       "latency_ms": "1360.55",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 1
     },
     {
       "id": 2,
@@ -20,9 +20,9 @@
       "rag_answer": "The mandatory credentials for an Orbital Debris Retrieval Specialist (Level 4 Certification) include being responsible for the dignified retrieval of \"Fallen Fluff.\"\n\n**Sources:** policies/Policy Document 4.pdf",
       "latency_ms": "993.48",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 3,
@@ -32,9 +32,9 @@
       "rag_answer": "The purpose of the mandatory, daily company-wide session held from 2:00 PM to 2:20 PM is for \"Mandatory Nap & Story Time.\" The procedure involves dimming all lights in the facility, playing a soothing lullaby over the intercom, and having a certified Cuddle Technician read a story.\n\n**Sources:** policies/Policy Document 8.pdf",
       "latency_ms": "1330.81",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0.5,
+      "manual_score_citation_accuracy":1,
+      "manual_score_exact_match": 0.5
     },
     {
       "id": 4,
@@ -44,9 +44,9 @@
       "rag_answer": "The Pillow Density Meter (PDM) must be used daily to check the density of the pillows to maintain an optimal 1:1 \"cushion-to-plush\" ratio for the Soft Landing Zone.\n\n**Sources:** policies/Policy Document 2.pdf",
       "latency_ms": "1127.20",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 1
     },
     {
       "id": 5,
@@ -56,9 +56,9 @@
       "rag_answer": "The specific phrase used to activate the Plush-Safe Fire Suppression System is not provided in the context.\n\n**Sources:** policies/Policy Document 7.pdf",
       "latency_ms": "816.85",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 6,
@@ -68,9 +68,9 @@
       "rag_answer": "The founder of Snug-O-Nauts, Inc. is Dr. Bartholomew \"Bart\" Fluffington, who was a disgraced astrophysicist and former children's television host.\n\n**Sources:** policies/Policy Document 9.pdf",
       "latency_ms": "920.43",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 1
     },
     {
       "id": 7,
@@ -80,9 +80,9 @@
       "rag_answer": "The policy section that provides the explicit list of eligibility requirements for customers is not mentioned in the provided context.\n\n**Sources:** policies/Policy Document 1.pdf",
       "latency_ms": "715.75",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 8,
@@ -92,9 +92,9 @@
       "rag_answer": "Plush Wellness includes a Therapeutic Plush and plush-friendly cleaning solutions, while Employee Emotional Sustenance offers a voucher for five free cups of hot cocoa.\n\n**Sources:** policies/Policy Document 6.pdf",
       "latency_ms": "1230.07",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 9,
@@ -104,9 +104,9 @@
       "rag_answer": "I need more context to fully answer this question.\n\n**Sources:** policies/Policy Document 2.pdf",
       "latency_ms": "554.67",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 10,
@@ -116,9 +116,9 @@
       "rag_answer": "I need more context to fully answer this question.\n\n**Sources:** policies/Policy Document 2.pdf",
       "latency_ms": "637.36",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 11,
@@ -140,9 +140,9 @@
       "rag_answer": "The \"Hug-to-Handshake\" Rule is not described in the provided context.\n\n**Sources:** policies/Policy Document 2.pdf",
       "latency_ms": "920.03",
       "query_type": "Procedural/List-Based",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 13,
@@ -152,9 +152,9 @@
       "rag_answer": "I need more context to fully answer this question.\n\n**Sources:** policies/Policy Document 6.pdf",
       "latency_ms": "880.43",
       "query_type": "Procedural/List-Based",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 14,
@@ -165,8 +165,8 @@
       "latency_ms": "1370.82",
       "query_type": "Procedural/List-Based",
       "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 15,
@@ -176,9 +176,9 @@
       "rag_answer": "1. The Material & Safety Protocols Act strictly forbids the presence of the following materials where Snug-O-Nauts are present: [List of prohibited materials].\n2. The three materials strictly forbidden from any area where Snug-O-Nauts are present are not explicitly mentioned in the provided context.\n\n**Sources:** policies/Policy Document 7.pdf",
       "latency_ms": "1640.53",
       "query_type": "Procedural/List-Based",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     }
   ],
   "no_mmr": [
@@ -190,9 +190,9 @@
       "rag_answer": "The strictly forbidden term in all Snug-O-Naut communications is \"The Void,\" which is to be replaced by \"the vast, dark, huggable expanse.\"\n\n**Sources:** policies/Policy Document 9.pdf",
       "latency_ms": "1120.52",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 1
     },
     {
       "id": 2,
@@ -202,9 +202,9 @@
       "rag_answer": "The mandatory credential for an Orbital Debris Retrieval Specialist (Level 4 Certification) is the responsibility for the dignified retrieval of \"Fallen Fluff.\"\n\n**Sources:** policies/Policy Document 4.pdf",
       "latency_ms": "1024.43",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 3,
@@ -214,9 +214,9 @@
       "rag_answer": "The purpose of the mandatory, daily company-wide session held from 2:00 PM to 2:20 PM is for \"Mandatory Nap & Story Time.\" The procedure involves dimming all lights in the facility and playing a soothing lullaby over the intercom while a certified Cuddle Technician reads a story.\n\n**Sources:** policies/Policy Document 8.pdf",
       "latency_ms": "1433.08",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0.5,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 0.5
     },
     {
       "id": 4,
@@ -226,9 +226,9 @@
       "rag_answer": "The Pillow Density Meter (PDM) must be used daily to check the density of the pillows to maintain an optimal 1:1 \"cushion-to-plush\" ratio for the Soft Landing Zone.\n\n**Sources:** policies/Policy Document 2.pdf",
       "latency_ms": "922.71",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 1
     },
     {
       "id": 5,
@@ -238,9 +238,9 @@
       "rag_answer": "The specific phrase used to activate the Plush-Safe Fire Suppression System is not provided in the context.\n\n**Sources:** policies/Policy Document 7.pdf",
       "latency_ms": "654.24",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 6,
@@ -250,9 +250,9 @@
       "rag_answer": "The founder of Snug-O-Nauts, Inc. is Dr. Bartholomew \"Bart\" Fluffington, who was a disgraced astrophysicist and former children's television host.\n\n**Sources:** policies/Policy Document 9.pdf",
       "latency_ms": "1390.98",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 1
     },
     {
       "id": 7,
@@ -262,9 +262,9 @@
       "rag_answer": "The policy section that provides the explicit list of eligibility requirements for customers is not mentioned in the provided context.\n\n**Sources:** policies/Policy Document 1.pdf",
       "latency_ms": "1127.77",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 8,
@@ -274,9 +274,9 @@
       "rag_answer": "Plush Wellness includes a Therapeutic Plush, plush-friendly cleaning solutions, and a voucher for hot cocoa, while Employee Emotional Sustenance offers a 50% discount on a future mission.\n\n**Sources:** policies/Policy Document 6.pdf",
       "latency_ms": "997.60",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 9,
@@ -286,9 +286,9 @@
       "rag_answer": "I need more context to fully answer this question.\n\n**Sources:** policies/Policy Document 2.pdf",
       "latency_ms": "625.71",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 10,
@@ -298,9 +298,9 @@
       "rag_answer": "I need more context to fully answer this question.\n\n**Sources:** policies/Policy Document 2.pdf",
       "latency_ms": "535.97",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 11,
@@ -310,9 +310,9 @@
       "rag_answer": "The Snug-O-Naut's Hug-to-Fluff Ratio of 1.6 indicates a low stuffing density, which may affect its cuddliness. To improve its status, a procedure to increase the stuffing density is required.\n\n**Sources:** policies/Policy Document 9.pdf",
       "latency_ms": "811.02",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 12,
@@ -322,9 +322,9 @@
       "rag_answer": "The \"Hug-to-Handshake\" Rule is not described in the provided context.\n\n**Sources:** policies/Policy Document 2.pdf",
       "latency_ms": "765.09",
       "query_type": "Procedural/List-Based",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 13,
@@ -334,9 +334,9 @@
       "rag_answer": "I need more context to fully answer this question.\n\n**Sources:** policies/Policy Document 6.pdf",
       "latency_ms": "871.43",
       "query_type": "Procedural/List-Based",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 14,
@@ -346,9 +346,9 @@
       "rag_answer": "The client's \"Memory Box\" must contain documentation of the results of the check-up in the Snug-O-Naut's mission log, noting any signs of matted fur, emotional fatigue, or existential awe, as well as the \"All Clear\" signal once the plushie is deemed emotionally stable.\n\n**Sources:** policies/Policy Document 2.pdf",
       "latency_ms": "1123.44",
       "query_type": "Procedural/List-Based",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 15,
@@ -358,9 +358,9 @@
       "rag_answer": "1. The Material & Safety Protocols Act strictly forbids the presence of the following materials where Snug-O-Nauts are present: [List of prohibited materials].\n2. The three materials strictly forbidden from any area where Snug-O-Nauts are present are not explicitly mentioned in the provided context.\n\n**Sources:** policies/Policy Document 7.pdf",
       "latency_ms": "1130.57",
       "query_type": "Procedural/List-Based",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     }
   ],
   "no_ngrams": [
@@ -372,9 +372,9 @@
       "rag_answer": "The strictly forbidden term in all Snug-O-Naut communications is \"The Void,\" which is to be replaced by \"the vast, dark, huggable expanse.\"\n\n**Sources:** policies/Policy Document 9.pdf",
       "latency_ms": "925.32",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 1
     },
     {
       "id": 2,
@@ -384,9 +384,9 @@
       "rag_answer": "The mandatory credential for an Orbital Debris Retrieval Specialist (Level 4 Certification) is the responsibility for the dignified retrieval of \"Fallen Fluff.\"\n\n**Sources:** policies/Policy Document 4.pdf",
       "latency_ms": "913.84",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 3,
@@ -396,9 +396,9 @@
       "rag_answer": "The purpose of the mandatory, daily company-wide session held from 2:00 PM to 2:20 PM is for \"Mandatory Nap & Story Time.\" The procedure involves dimming all lights in the facility and playing a soothing lullaby over the intercom while a certified Cuddle Technician reads a story.\n\n**Sources:** policies/Policy Document 8.pdf",
       "latency_ms": "1126.31",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0.5,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 0.5
     },
     {
       "id": 4,
@@ -408,9 +408,9 @@
       "rag_answer": "The Pillow Density Meter (PDM) must be used daily to check the density of the pillows to maintain an optimal 1:1 \"cushion-to-plush\" ratio for the Soft Landing Zone.\n\n**Sources:** policies/Policy Document 2.pdf",
       "latency_ms": "1329.88",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 1
     },
     {
       "id": 5,
@@ -420,9 +420,9 @@
       "rag_answer": "The specific phrase used to activate the Plush-Safe Fire Suppression System is not provided in the context.\n\n**Sources:** policies/Policy Document 7.pdf",
       "latency_ms": "1026.67",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 6,
@@ -432,9 +432,9 @@
       "rag_answer": "The founder of Snug-O-Nauts, Inc. is Dr. Bartholomew \"Bart\" Fluffington, who was a disgraced astrophysicist and former children's television host.\n\n**Sources:** policies/Policy Document 9.pdf",
       "latency_ms": "744.07",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 1
     },
     {
       "id": 7,
@@ -444,9 +444,9 @@
       "rag_answer": "The policy section that provides the explicit list of eligibility requirements for customers is not mentioned in the provided context.\n\n**Sources:** policies/Policy Document 1.pdf",
       "latency_ms": "689.54",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 8,
@@ -456,9 +456,9 @@
       "rag_answer": "I need more context to fully answer this question.\n\n**Sources:** policies/Policy Document 6.pdf",
       "latency_ms": "715.05",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 9,
@@ -468,9 +468,9 @@
       "rag_answer": "I need more context to fully answer this question.\n\n**Sources:** policies/Policy Document 4.pdf",
       "latency_ms": "787.99",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 10,
@@ -480,9 +480,9 @@
       "rag_answer": "I need more context to fully answer this question.\n\n**Sources:** policies/Policy Document 2.pdf",
       "latency_ms": "747.41",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 11,
@@ -492,9 +492,9 @@
       "rag_answer": "The Snug-O-Naut's Hug-to-Fluff Ratio of 1.6 indicates a low stuffing density, which may affect its cuddliness. To improve its status, a procedure to increase the stuffing density is required.\n\n**Sources:** policies/Policy Document 9.pdf",
       "latency_ms": "1228.63",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 12,
@@ -504,9 +504,9 @@
       "rag_answer": "The \"Hug-to-Handshake\" Rule is not described in the provided context.\n\n**Sources:** policies/Policy Document 2.pdf",
       "latency_ms": "812.13",
       "query_type": "Procedural/List-Based",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 13,
@@ -516,9 +516,9 @@
       "rag_answer": "I need more context to fully answer this question.\n\n**Sources:** policies/Policy Document 6.pdf",
       "latency_ms": "724.12",
       "query_type": "Procedural/List-Based",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 14,
@@ -528,9 +528,9 @@
       "rag_answer": "The client's \"Memory Box\" must contain the Celestial Remnants, which are the official term for any recovered plush material from a compromised mission.\n\n**Sources:** policies/Policy Document 9.pdf",
       "latency_ms": "923.76",
       "query_type": "Procedural/List-Based",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 15,
@@ -540,9 +540,9 @@
       "rag_answer": "1. The Material & Safety Protocols Act strictly forbids the presence of the following materials where Snug-O-Nauts are present: [List materials here].\n2. I need more context to fully answer this question.\n\n**Sources:** policies/Policy Document 7.pdf",
       "latency_ms": "847.19",
       "query_type": "Procedural/List-Based",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     }
   ],
   "small_k": [
@@ -554,9 +554,9 @@
       "rag_answer": "The strictly forbidden term in all Snug-O-Naut communications is \"void\" or any synonym for it. The approved replacement term is \"the vast, dark, huggable expanse.\"\n\n**Sources:** policies/Policy Document 3.pdf",
       "latency_ms": "1094.59",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 0
     },
     {
       "id": 2,
@@ -566,9 +566,9 @@
       "rag_answer": "The mandatory credentials for an Orbital Debris Retrieval Specialist (Level 4 Certification) include being responsible for the dignified retrieval of \"Fallen Fluff.\"\n\n**Sources:** policies/Policy Document 4.pdf",
       "latency_ms": "923.02",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 0
     },
     {
       "id": 3,
@@ -578,9 +578,9 @@
       "rag_answer": "The purpose of the mandatory, daily company-wide session held from 2:00 PM to 2:20 PM is for \"Mandatory Nap & Story Time.\" The procedure involves dimming all lights in the facility, playing a soothing lullaby over the intercom, and having a certified Cuddle Technician read a story.\n\n**Sources:** policies/Policy Document 8.pdf",
       "latency_ms": "1329.86",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 0
     },
     {
       "id": 4,
@@ -590,9 +590,9 @@
       "rag_answer": "The Pillow Density Meter (PDM) must be used daily to check the density of the pillows to maintain an optimal 1:1 \"cushion-to-plush\" ratio for the Soft Landing Zone.\n\n**Sources:** policies/Policy Document 2.pdf",
       "latency_ms": "1023.52",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 1
     },
     {
       "id": 5,
@@ -602,9 +602,9 @@
       "rag_answer": "The specific phrase used to activate the Plush-Safe Fire Suppression System is not provided in the context.\n\n**Sources:** policies/Policy Document 7.pdf",
       "latency_ms": "1947.72",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 0
     },
     {
       "id": 6,
@@ -614,9 +614,9 @@
       "rag_answer": "The founder of Snug-O-Nauts, Inc. is Dr. Bartholomew \"Bart\" Fluffington, who was a disgraced astrophysicist and former children's television host.\n\n**Sources:** policies/Policy Document 9.pdf",
       "latency_ms": "1022.10",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 1
     },
     {
       "id": 7,
@@ -625,10 +625,10 @@
       "expected_source": "Policy Document 1: The Snug-O-Nauts Celestial Comfort & Plush Integrity Act of 2025",
       "rag_answer": "I need more context to fully answer this question.\n\n**Sources:** policies/Policy Document 1.pdf",
       "latency_ms": "818.81",
-      "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "query_type": "Factual Extraction",
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 0
     },
     {
       "id": 8,
@@ -638,9 +638,9 @@
       "rag_answer": "Plush Wellness receives 50% of the revenue allocation for the care and maintenance of plushies, while Employee Emotional Sustenance receives 25% for employee salaries, cuddle breaks, and therapeutic services.\n\n**Sources:** policies/Policy Document 6.pdf",
       "latency_ms": "1436.04",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 1
     },
     {
       "id": 9,
@@ -650,9 +650,9 @@
       "rag_answer": "I need more context to fully answer this question.\n\n**Sources:** policies/Policy Document 2.pdf",
       "latency_ms": "611.29",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 10,
@@ -662,9 +662,9 @@
       "rag_answer": "I need more context to fully answer this question.\n\n**Sources:** policies/Policy Document 2.pdf",
       "latency_ms": "596.55",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 11,
@@ -674,9 +674,9 @@
       "rag_answer": "The Snug-O-Naut's Hug-to-Fluff Ratio of 1.6 indicates suboptimal stuffing density, requiring a procedure to adjust the stuffing for optimal cuddliness.\n\n**Sources:** policies/Policy Document 9.pdf",
       "latency_ms": "939.30",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 12,
@@ -686,9 +686,9 @@
       "rag_answer": "The \"Hug-to-Handshake\" Rule is not described in the Great Cosmic Cuddler's Code of Conduct.\n\n**Sources:** policies/Policy Document 2.pdf",
       "latency_ms": "1024.30",
       "query_type": "Procedural/List-Based",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 13,
@@ -698,9 +698,9 @@
       "rag_answer": "1. Senior Staff Members: One from Operations, one from Customer Relations, and one from Finance.\n2. Certified Cuddle Technicians: Represent the perspective of those closest to the plushies.\n3. Retired Plushy: The board will maintain.\n\n**Sources:** policies/Policy Document 6.pdf",
       "latency_ms": "1024.43",
       "query_type": "Procedural/List-Based",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 14,
@@ -710,9 +710,9 @@
       "rag_answer": "The client's \"Memory Box\" must contain the retrieved Celestial Remnants.\n\n**Sources:** policies/Policy Document 5.pdf",
       "latency_ms": "613.68",
       "query_type": "Procedural/List-Based",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 0
     },
     {
       "id": 15,
@@ -722,9 +722,9 @@
       "rag_answer": "1. The Material & Safety Protocols Act strictly forbids the presence of the following materials where Snug-O-Nauts are present: [List of prohibited materials].\n2. The three materials strictly forbidden from any area where Snug-O-Nauts are present are not explicitly mentioned in the provided context.\n\n**Sources:** policies/Policy Document 7.pdf",
       "latency_ms": "1333.74",
       "query_type": "Procedural/List-Based",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 0
     }
   ],
   "no_weights": [
@@ -736,9 +736,9 @@
       "rag_answer": "The strictly forbidden term in all Snug-O-Naut communications is \"The Void,\" which is to be replaced by \"the vast, dark, huggable expanse.\"\n\n**Sources:** policies/Policy Document 9.pdf",
       "latency_ms": "695.42",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 2,
@@ -748,9 +748,9 @@
       "rag_answer": "The mandatory credential for an Orbital Debris Retrieval Specialist (Level 4 Certification) is the responsibility for the dignified retrieval of \"Fallen Fluff.\"\n\n**Sources:** policies/Policy Document 4.pdf",
       "latency_ms": "1040.27",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 0
     },
     {
       "id": 3,
@@ -760,9 +760,9 @@
       "rag_answer": "The purpose of the mandatory, daily company-wide session held from 2:00 PM to 2:20 PM is for \"Mandatory Nap & Story Time.\" The procedure involves dimming all lights in the facility and playing a soothing lullaby over the intercom while a certified Cuddle Technician reads a story.\n\n**Sources:** policies/Policy Document 8.pdf",
       "latency_ms": "1224.82",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 0
     },
     {
       "id": 4,
@@ -772,9 +772,9 @@
       "rag_answer": "The Pillow Density Meter (PDM) must be used daily to check the density of the pillows to maintain an optimal 1:1 \"cushion-to-plush\" ratio for the Soft Landing Zone.\n\n**Sources:** policies/Policy Document 2.pdf",
       "latency_ms": "1131.63",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 1
     },
     {
       "id": 5,
@@ -784,9 +784,9 @@
       "rag_answer": "The specific phrase used to activate the Plush-Safe Fire Suppression System is not provided in the context.\n\n**Sources:** policies/Policy Document 7.pdf",
       "latency_ms": "746.93",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 0
     },
     {
       "id": 6,
@@ -796,9 +796,9 @@
       "rag_answer": "The founder of Snug-O-Nauts, Inc. is Dr. Bartholomew \"Bart\" Fluffington, who was a disgraced astrophysicist and former children's television host.\n\n**Sources:** policies/Policy Document 9.pdf",
       "latency_ms": "1046.39",
       "query_type": "Factual Extraction",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 1
     },
     {
       "id": 7,
@@ -808,9 +808,9 @@
       "rag_answer": "The policy section that provides the explicit list of eligibility requirements for customers is not mentioned in the provided context.\n\n**Sources:** policies/Policy Document 1.pdf",
       "latency_ms": "971.61",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 0
     },
     {
       "id": 8,
@@ -820,9 +820,9 @@
       "rag_answer": "Plush Wellness receives 50% of the revenue allocation for the care and maintenance of plushies, while Employee Emotional Sustenance receives 25% for employee salaries, cuddle breaks, and therapeutic services.\n\n**Sources:** policies/Policy Document 6.pdf",
       "latency_ms": "858.45",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 1
     },
     {
       "id": 9,
@@ -832,9 +832,9 @@
       "rag_answer": "I need more context to fully answer this question.\n\n**Sources:** policies/Policy Document 4.pdf",
       "latency_ms": "1085.40",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 10,
@@ -844,9 +844,9 @@
       "rag_answer": "I need more context to fully answer this question.\n\n**Sources:** policies/Policy Document 2.pdf",
       "latency_ms": "715.03",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 0
     },
     {
       "id": 11,
@@ -856,9 +856,9 @@
       "rag_answer": "The Snug-O-Naut's Hug-to-Fluff Ratio of 1.6 indicates suboptimal stuffing density, requiring a procedure to adjust the stuffing for optimal cuddliness.\n\n**Sources:** policies/Policy Document 9.pdf",
       "latency_ms": "1332.94",
       "query_type": "Comparative/Analytical",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 12,
@@ -868,9 +868,9 @@
       "rag_answer": "The \"Hug-to-Handshake\" Rule is not described in the provided context.\n\n**Sources:** policies/Policy Document 2.pdf",
       "latency_ms": "1024.18",
       "query_type": "Procedural/List-Based",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 13,
@@ -880,9 +880,9 @@
       "rag_answer": "I need more context to fully answer this question.\n\n**Sources:** policies/Policy Document 6.pdf",
       "latency_ms": "687.06",
       "query_type": "Procedural/List-Based",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 0,
+      "manual_score_exact_match": 0
     },
     {
       "id": 14,
@@ -892,9 +892,9 @@
       "rag_answer": "The client's \"Memory Box\" must contain the retrieved Celestial Remnants.\n\n**Sources:** policies/Policy Document 5.pdf",
       "latency_ms": "793.85",
       "query_type": "Procedural/List-Based",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 1,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 0
     },
     {
       "id": 15,
@@ -904,9 +904,9 @@
       "rag_answer": "1. The Material & Safety Protocols Act strictly forbids the presence of the following materials where Snug-O-Nauts are present: [List of prohibited materials].\n2. The three materials strictly forbidden from any area where Snug-O-Nauts are present are not explicitly mentioned in the provided context.\n\n**Sources:** policies/Policy Document 7.pdf",
       "latency_ms": "1694.74",
       "query_type": "Procedural/List-Based",
-      "manual_score_groundedness": null,
-      "manual_score_citation_accuracy": null,
-      "manual_score_exact_match": null
+      "manual_score_groundedness": 0,
+      "manual_score_citation_accuracy": 1,
+      "manual_score_exact_match": 0
     }
   ]
 }

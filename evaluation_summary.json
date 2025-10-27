@@ -1,0 +1,10 @@
+{
+  "n_grounded": 0,
+  "mean_grounded": null,
+  "n_citation": 0,
+  "mean_citation": null,
+  "n_exact": 0,
+  "mean_exact": null,
+  "n_latency": 15,
+  "median_latency_ms": 1024.18
+}
