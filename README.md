@@ -69,6 +69,10 @@ python app.py
 
 Visit `http://localhost:5000` in your browser.
 
+## Retrieval Notes
+
+**MMR:** MMR (k=8, fetch_k=20, λ=0.85) was used briefly (commit `118f651`). It was disconnected in `5077140`; a code comment says Chroma no longer accepted those options. Because it was already off, the `no_mmr` ablation compared identical configurations and doesn't measure MMR's effect.
+
 ## API Endpoints
 
 ### Web Interface

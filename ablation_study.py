@@ -13,31 +13,29 @@ def run_ablation_configuration(config):
 def main():
     configs = {
         "baseline": {
-            "use_mmr": True,
             "use_ngrams": True,
             "k": 20,
             "use_weighted_scoring": True
         },
+        # NOTE: MMR was removed from rag_pipeline.py, so "no_mmr" now duplicates
+        # "baseline". It is kept so analyze_ablation.py and ablation_results.json
+        # keep the same set of configuration names.
         "no_mmr": {
-            "use_mmr": False,
             "use_ngrams": True,
             "k": 20,
             "use_weighted_scoring": True
         },
         "no_ngrams": {
-            "use_mmr": True,
             "use_ngrams": False,
             "k": 20,
             "use_weighted_scoring": True
         },
         "small_k": {
-            "use_mmr": True,
             "use_ngrams": True,
             "k": 5,
             "use_weighted_scoring": True
         },
         "no_weights": {
-            "use_mmr": True,
             "use_ngrams": True,
             "k": 20,
             "use_weighted_scoring": False
