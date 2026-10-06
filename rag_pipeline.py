@@ -12,7 +12,6 @@ load_dotenv()
 
 # Configuration constants (must match what was used in ingest.py)
 CHROMA_PATH = "chroma_data"
-EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2"
 
 # Guardrail constant
 MAX_OUTPUT_LENGTH = 500

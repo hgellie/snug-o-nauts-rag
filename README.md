@@ -1,6 +1,6 @@
 # Snug-Project: Retrieval-Augmented Generation (RAG) Policy Bot
 
-This project implements a Retrieval-Augmented Generation (RAG) LLM-based application designed to answer user questions exclusively about a corpus of company policies and procedures. It uses a local vector store (ChromaDB) and the OpenAI API for generation.
+This project implements a Retrieval-Augmented Generation (RAG) LLM-based application designed to answer user questions exclusively about a corpus of company policies and procedures. It uses a local vector store (ChromaDB) and the OpenAI API for both embeddings (`text-embedding-3-small`) and generation (`gpt-3.5-turbo`).
 
 ## Features
 
@@ -16,7 +16,7 @@ This project implements a Retrieval-Augmented Generation (RAG) LLM-based applica
 | Component | Status | Details |
 | :--- | :--- | :--- |
 | **Data Corpus** | ✅ | Policy documents in various formats (PDF, TXT, MD) |
-| **Ingestion** | ✅ | Documents chunked & embedded using `all-MiniLM-L6-v2` |
+| **Ingestion** | ✅ | Documents chunked & embedded using OpenAI `text-embedding-3-small` |
 | **Vector Store** | ✅ | ChromaDB for efficient similarity search |
 | **RAG Pipeline** | ✅ | Top-k retrieval with source citation |
 | **Web Application** | ✅ | Flask-based UI and API endpoints |
