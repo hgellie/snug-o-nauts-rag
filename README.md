@@ -140,6 +140,17 @@ snug-o-nauts-rag/
 
 Recorded outputs (`evaluation_*.json/csv`, `ablation_*.json/csv/png`) are committed alongside the scripts.
 
+## Known Limitations
+
+These are documented here rather than fixed, so the recorded evaluation and ablation results still match the code.
+
+- **Only one chunk is sent to the model.** `answer_question()` retrieves k chunks, re-ranks them, and passes only the single best ~300-character chunk to the LLM (and cites only its source). Comparative questions that need facts from two documents or sections are weak, because the model never sees the second one.
+- **The test set is small.** `evaluation_data.json` has 15 questions (6 factual, 5 comparative/analytical, 4 procedural/list-based), scored by hand. One question moves an average by about 7 percentage points, so small differences between configurations aren't meaningful.
+- **N-gram phrase matching misses some matches.** `get_ngrams()` only lowercases and splits on whitespace; it doesn't strip punctuation or markdown. A question ending in `ratio?` or containing `**Existential Hum**` won't match the same phrase in a chunk.
+- **The weighted re-ranker didn't beat plain token overlap.** In the ablation (k=20), ranking by token overlap alone (`no_weights`) scored 0.40 groundedness and 0.67 citation accuracy, against 0.27 and 0.21 for the weighted `baseline`. Removing the n-gram component (`no_ngrams`) changed nothing. Note that 4 baseline scores were left unscored.
+- **The guardrail is prompt-only.** Staying within the policy corpus relies on the prompt's instructions. Chroma always returns up to k chunks, so the "couldn't find any relevant information" branch effectively never runs, and there's no relevance threshold or output check.
+- **Short chunks lose the question.** If the selected chunk is 100 characters or fewer, `PROMPT_TEMPLATE` is used instead of `ANSWER_TEMPLATE`. It has no `{context}` or `{question}` placeholders, so neither the context nor the question is inserted into the prompt.
+
 ## Development
 
 ### Adding New Features
