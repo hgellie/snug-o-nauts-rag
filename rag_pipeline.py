@@ -12,7 +12,6 @@ load_dotenv()
 
 # Configuration constants (must match what was used in ingest.py)
 CHROMA_PATH = "chroma_data"
-EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2"
 
 # Guardrail constant
 MAX_OUTPUT_LENGTH = 500
@@ -50,7 +49,6 @@ You are an expert Q&A system for Snug-O-Nauts company policies. Your goal is to 
 # --- Function definition moved below ---
 def answer_question(
     question: str,
-    use_mmr: bool = True,
     use_ngrams: bool = True,
     k: int = 8,
     use_weighted_scoring: bool = True
@@ -59,7 +57,7 @@ def answer_question(
     Retrieves relevant context and generates an answer using the LLM.
     Supports ablation study by toggling retrieval and scoring components.
     """
-    db, llm, _ = setup_rag_components()
+    db, llm = setup_rag_components()
     if db is None:
         return "Setup failed: Vector store not available."
     search_kwargs = {"k": k}
@@ -157,7 +155,7 @@ def answer_question(
     return final_answer
 
 def setup_rag_components():
-    """Sets up the LLM, vector store, and the ContextualCompressionRetriever."""
+    """Sets up the vector store and the LLM."""
     
     # 1. Initialize the Embedding Model (must match ingest.py)
     embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
@@ -165,23 +163,12 @@ def setup_rag_components():
     # 2. Load the Vector Database
     if not os.path.exists(CHROMA_PATH):
         print(f"Error: Vector store not found at {CHROMA_PATH}. Did you run 'python ingest.py'?")
-        return None, None, None # Must return the same number of Nones as successful outputs
+        return None, None # Must return the same number of Nones as successful outputs
     
     db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embeddings)
     
     # 3. Initialize the LLM (using your OpenAI key from .env)
     llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
-    
-    # 4. Create a simple retriever from the vector DB.
-    # Use MMR with optimized parameters for better groundedness
-    retriever = db.as_retriever(
-        search_type="mmr",
-        search_kwargs={
-            "k": 8,           # Get more candidates
-            "fetch_k": 20,    # Larger candidate pool
-            "lambda_mult": 0.85  # Stronger emphasis on relevance vs diversity
-        }
-    )
 
-    # FINAL RETURN: Return the DB, LLM and retriever
-    return db, llm, retriever
+    # FINAL RETURN: Return the DB and LLM (answer_question builds its own retriever)
+    return db, llm

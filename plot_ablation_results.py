@@ -6,20 +6,21 @@ def load_results(path="ablation_results.json"):
     with open(path, "r") as f:
         return json.load(f)
 
+def mean_of_scored(config_results, field):
+    """Average a manual score field, skipping unscored (None) items."""
+    values = [float(r[field]) for r in config_results if r.get(field) is not None]
+    return sum(values) / len(values) if values else 0
+
 def extract_metrics(results):
     configs = []
     grounded = []
     citation = []
     exact = []
     for name, config_results in results.items():
-        total = len(config_results)
-        g = sum(r.get("auto_score_groundedness", 0) for r in config_results)
-        c = sum(r.get("auto_score_citation_accuracy", 0) for r in config_results)
-        e = sum(r.get("auto_score_exact_match", 0) for r in config_results)
         configs.append(name)
-        grounded.append(g / total if total else 0)
-        citation.append(c / total if total else 0)
-        exact.append(e / total if total else 0)
+        grounded.append(mean_of_scored(config_results, "manual_score_groundedness"))
+        citation.append(mean_of_scored(config_results, "manual_score_citation_accuracy"))
+        exact.append(mean_of_scored(config_results, "manual_score_exact_match"))
     return configs, grounded, citation, exact
 
 def plot_metrics(configs, grounded, citation, exact):

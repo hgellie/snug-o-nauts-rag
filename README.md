@@ -1,13 +1,13 @@
 # Snug-Project: Retrieval-Augmented Generation (RAG) Policy Bot
 
-This project implements a Retrieval-Augmented Generation (RAG) LLM-based application designed to answer user questions exclusively about a corpus of company policies and procedures. It uses a local vector store (ChromaDB) and the OpenAI API for generation.
+This project implements a Retrieval-Augmented Generation (RAG) LLM-based application designed to answer user questions exclusively about a corpus of company policies and procedures. It uses a local vector store (ChromaDB) and the OpenAI API for both embeddings (`text-embedding-3-small`) and generation (`gpt-3.5-turbo`).
 
 ## Features
 
 - 🔍 **Smart Document Retrieval**: Uses semantic search to find relevant policy information
 - 🤖 **AI-Powered Answers**: Leverages OpenAI's GPT models for natural language understanding
-- 📚 **Source Citations**: Every answer includes references to source documents
-- 🛡️ **Built-in Guardrails**: Prevents answers from outside the policy corpus
+- 📚 **Source Citations**: Each answer cites the one source document its context came from
+- 🛡️ **Guardrails (prompt-based)**: The prompt instructs the model to answer only from the retrieved policy context; there is no separate check that enforces this
 - 🌐 **User-Friendly Interface**: Clean web UI for easy interaction
 - 🔗 **API Access**: RESTful endpoints for programmatic access
 
@@ -15,12 +15,12 @@ This project implements a Retrieval-Augmented Generation (RAG) LLM-based applica
 
 | Component | Status | Details |
 | :--- | :--- | :--- |
-| **Data Corpus** | ✅ | Policy documents in various formats (PDF, TXT, MD) |
-| **Ingestion** | ✅ | Documents chunked & embedded using `all-MiniLM-L6-v2` |
+| **Data Corpus** | ✅ | Policy documents in `policies/` (9 PDFs and 1 Markdown file) |
+| **Ingestion** | ✅ | Documents chunked & embedded using OpenAI `text-embedding-3-small` |
 | **Vector Store** | ✅ | ChromaDB for efficient similarity search |
-| **RAG Pipeline** | ✅ | Top-k retrieval with source citation |
+| **RAG Pipeline** | ✅ | Top-k similarity retrieval (k=8 by default), re-ranked by word overlap; only the single best chunk is sent to the LLM and cited |
 | **Web Application** | ✅ | Flask-based UI and API endpoints |
-| **CI/CD** | ✅ | GitHub Actions for automated testing |
+| **CI/CD** | ✅ | GitHub Actions: flake8 lint and Python compile check (no automated tests) |
 
 ## Quick Start
 
@@ -35,7 +35,7 @@ This project implements a Retrieval-Augmented Generation (RAG) LLM-based applica
 ```bash
 # Clone the repository
 git clone https://github.com/hgellie/snug-o-nauts-rag.git
-cd snug-project
+cd snug-o-nauts-rag
 
 # Create and activate virtual environment
 python3 -m venv .venv
@@ -69,6 +69,10 @@ python app.py
 
 Visit `http://localhost:5000` in your browser.
 
+## Retrieval Notes
+
+**MMR:** MMR (k=8, fetch_k=20, λ=0.85) was used briefly (commit `118f651`). It was disconnected in `5077140`; a code comment says Chroma no longer accepted those options. Because it was already off, the `no_mmr` ablation compared identical configurations and doesn't measure MMR's effect.
+
 ## API Endpoints
 
 ### Web Interface
@@ -86,19 +90,22 @@ Visit `http://localhost:5000` in your browser.
   ```json
   {
     "answer": "...",
-    "citations": ["policy_doc.md"],
+    "citations": ["policies/Policy Document 9.pdf"],
     "question": "What is the remote work policy?"
   }
   ```
+  `citations` holds one entry: the file path of the chunk the answer was generated from. It is empty only when retrieval returns nothing or setup fails.
 
 ## CI/CD Pipeline
 
-The project includes automated checks via GitHub Actions:
+The project includes automated checks via GitHub Actions (`.github/workflows/python-ci.yml`):
 
-- ✅ Python syntax validation
-- ✅ Code quality checks (flake8)
-- ✅ Dependency installation verification
-- ✅ File structure validation
+- ✅ Dependency installation from `requirements.txt`
+- ✅ flake8 lint: the build fails only on syntax errors and undefined names (`E9,F63,F7,F82`); all other warnings are reported but don't fail the build
+- ✅ File structure check: `app.py`, `rag_pipeline.py` and `requirements.txt` must exist
+- ✅ Compile check: `python -m py_compile` on `app.py` and `rag_pipeline.py`
+
+There are no automated tests. The evaluation needs an OpenAI API key, so it is not run in CI.
 
 The workflow runs on:
 - Push to main branch
@@ -107,18 +114,42 @@ The workflow runs on:
 ## Project Structure
 
 ```
-snug-project/
+snug-o-nauts-rag/
 ├── .github/
 │   └── workflows/
-│       └── python-ci.yml    # CI/CD configuration
-├── chroma_data/            # Vector database (generated)
-├── policies/              # Source policy documents
-├── app.py                # Flask web application
-├── evaluate.py           # Evaluation scripts
-├── ingest.py            # Document ingestion
-├── rag_pipeline.py      # Core RAG implementation
-└── requirements.txt     # Python dependencies
+│       └── python-ci.yml          # CI configuration
+├── chroma_data/                   # Chroma vector database (generated by ingest.py)
+├── policies/                      # Source policy documents
+├── app.py                         # Flask web UI and /chat, /health endpoints
+├── ingest.py                      # Load, chunk (300 chars, 30 overlap) and embed documents
+├── rag_pipeline.py                # Retrieval, re-ranking and answer generation
+├── requirements.txt               # Python dependencies
+│
+│   # Evaluation
+├── evaluation_data.json           # 15-question test set with reference answers and expected sources
+├── evaluate.py                    # Run the test set, record latency -> evaluation_results_raw.json
+├── evaluate_autoscore.py          # Automatic groundedness / citation / exact-match scoring
+├── score_evaluation.py            # Manual scoring via CSV (prepare | apply) -> evaluation_summary.*
+│
+│   # Ablation
+├── ablation_study.py              # Run the test set under 5 configurations -> ablation_results.json
+├── analyze_ablation.py            # Average manual scores per config -> ablation_summary.*, ablation_analysis.png
+├── plot_ablation_results.py       # Grouped bar chart of ablation scores -> ablation_metrics.png
+└── fix_json.py                    # Normalize manual scores in ablation_results.json (unscored -> null)
 ```
+
+Recorded outputs (`evaluation_*.json/csv`, `ablation_*.json/csv/png`) are committed alongside the scripts.
+
+## Known Limitations
+
+These are documented here rather than fixed, so the recorded evaluation and ablation results still match the code.
+
+- **Only one chunk is sent to the model.** `answer_question()` retrieves k chunks, re-ranks them, and passes only the single best ~300-character chunk to the LLM (and cites only its source). Comparative questions that need facts from two documents or sections are weak, because the model never sees the second one.
+- **The test set is small.** `evaluation_data.json` has 15 questions (6 factual, 5 comparative/analytical, 4 procedural/list-based), scored by hand. One question moves an average by about 7 percentage points, so small differences between configurations aren't meaningful.
+- **N-gram phrase matching misses some matches.** `get_ngrams()` only lowercases and splits on whitespace; it doesn't strip punctuation or markdown. A question ending in `ratio?` or containing `**Existential Hum**` won't match the same phrase in a chunk.
+- **The weighted re-ranker didn't beat plain token overlap.** In the ablation (k=20), ranking by token overlap alone (`no_weights`) scored 0.40 groundedness and 0.67 citation accuracy, against 0.27 and 0.21 for the weighted `baseline`. Removing the n-gram component (`no_ngrams`) changed nothing. Note that 4 baseline scores were left unscored.
+- **The guardrail is prompt-only.** Staying within the policy corpus relies on the prompt's instructions. Chroma always returns up to k chunks, so the "couldn't find any relevant information" branch effectively never runs, and there's no relevance threshold or output check.
+- **Short chunks lose the question.** If the selected chunk is 100 characters or fewer, `PROMPT_TEMPLATE` is used instead of `ANSWER_TEMPLATE`. It has no `{context}` or `{question}` placeholders, so neither the context nor the question is inserted into the prompt.
 
 ## Development
 
@@ -135,14 +166,15 @@ git checkout -b feature/your-feature-name
 
 The CI pipeline will automatically run checks on your PR.
 
-### Running Tests Locally
+### Running Checks Locally
+
+These are the same checks CI runs (there are no automated tests):
 
 ```bash
-# Install test dependencies
-pip install flake8 pytest
+pip install flake8
 
-# Run linting
-flake8 .
+# Run linting (same as CI)
+flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
 
 # Validate syntax
 python -m py_compile app.py rag_pipeline.py
